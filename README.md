@@ -49,8 +49,10 @@ asm
 96 halt
 
 ## Running
-compile the virtual machine:   g++ -o vm vm.cpp
-Run with the sample program:   ./vm
+## compile the virtual machine: 
+    g++ -o vm vm.cpp
+## Run with the sample program: 
+    ./vm
 
 ## Implementation 
   Memory: 100-location memory initialized to 0
@@ -64,18 +66,18 @@ Run with the sample program:   ./vm
           Process contexts saved on stack
 
 ## Limitations
-           Fixed memory size (100 locations)
-           Limited to 2 processes 
-           No memory protection
-           Simple round-robin scheduling
-           Basic error handling
+   Fixed memory size (100 locations)
+   Limited to 2 processes 
+   No memory protection
+   Simple round-robin scheduling
+   Basic error handling
 
 ## Future Enhancements
-         Add more instructions (multiply, divide, etc.)
-         Implement virtual memory
-         Add system calls
-         Support more processes
-         Improve error reporting
+   Add more instructions (multiply, divide, etc.)
+   Implement virtual memory
+   Add system calls
+   Support more processes
+   Improve error reporting
 
 ## Output Interpretation
    The program will output:
@@ -85,7 +87,7 @@ Run with the sample program:   ./vm
                        The counts will be interleaved due to process switching
 
 ## Debugging Tips
-             Check register states after halt
-             Examine memory contents for stack values
-             Verify timer and interrupt settings
-             Ensure stack operations don't overflow
+  Check register states after halt
+    Examine memory contents for stack values
+    Verify timer and interrupt setting
+    Ensure stack operations don't overflow
