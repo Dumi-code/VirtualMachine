@@ -2,11 +2,11 @@
 A simple virtual machine that executes custom assembly code with process scheduling capabilities.
 
 ## Features   
-   **Basic CPU Simulation**: Registers, memory, and instruction execution.
-   **Instruction Set**: Supports MOV, LOAD, STORE, ARITHMETIC, JUMPS, and more.
-   **Process Scheduling**: Implements a basic round-robin scheduler.
-   **Interrupt Handling**: Timer-based interrupts for process switching.
-   **Memory Management**: 100-location memory space with stack operations.
+   **Basic CPU Simulation**: Registers, memory, and instruction execution.<br>
+   **Instruction Set**: Supports MOV, LOAD, STORE, ARITHMETIC, JUMPS, and more.<br>
+   **Process Scheduling**: Implements a basic round-robin scheduler.<br>
+   **Interrupt Handling**: Timer-based interrupts for process switching.<br>
+   **Memory Management**: 100-location memory space with stack operations.<br>
 
 ## Instruction Set Overview
 
@@ -55,15 +55,15 @@ asm
     ./vm
 
 ## Implementation 
-  **Memory**: 100-location memory initialized to 0.
-  **Registers**:
-          General purpose: a, b, c, d, e, f.
-          Special: sp (stack pointer), acc (accumulator), pc (program counter).
-          System: ivec (interrupt vector), int (interrupt flag), timer.
-  **Scheduling**:
-          Timer interrupt every 5 cycles.
-          Round-robin switching between 2 processes.
-          Process contexts saved on stack.
+  **Memory**: 100-location memory initialized to 0.<br>
+  **Registers**:<br>
+          General purpose: a, b, c, d, e, f.<br>
+          Special: sp (stack pointer), acc (accumulator), pc (program counter).<br>
+          System: ivec (interrupt vector), int (interrupt flag), timer.<br>
+  **Scheduling**:<br>
+          Timer interrupt every 5 cycles.<br>
+          Round-robin switching between 2 processes.<br>
+          Process contexts saved on stack.<br>
 
 ## Limitations
    Fixed memory size (100 locations),
