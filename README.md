@@ -66,28 +66,28 @@ asm
           Process contexts saved on stack
 
 ## Limitations
-   Fixed memory size (100 locations)
-   Limited to 2 processes 
-   No memory protection
-   Simple round-robin scheduling
-   Basic error handling
+   Fixed memory size (100 locations),
+   Limited to 2 processes ,
+   No memory protection,
+   Simple round-robin scheduling,
+   Basic error handling.
 
 ## Future Enhancements
-   Add more instructions (multiply, divide, etc.)
-   Implement virtual memory
-   Add system calls
-   Support more processes
-   Improve error reporting
+   Add more instructions (multiply, divide, etc.),
+   Implement virtual memory,
+   Add system calls,
+   Support more processes,
+   Improve error reporting.
 
 ## Output Interpretation
    The program will output:
-                       Countdown from 20 (Process 0)
-                       Countdown from 10000 (Process 1)
-                       Final register and memory states
-                       The counts will be interleaved due to process switching
+                       Countdown from 20 (Process 0),
+                       Countdown from 10000 (Process 1),
+                       Final register and memory states,
+                       The counts will be interleaved due to process switching.
 
 ## Debugging Tips
-  Check register states after halt
-    Examine memory contents for stack values
-    Verify timer and interrupt setting
-    Ensure stack operations don't overflow
+  Check register states after halt,
+    Examine memory contents for stack values,
+    Verify timer and interrupt setting,
+    Ensure stack operations don't overflow.
