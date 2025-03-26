@@ -51,7 +51,7 @@ asm
 ## Running
 ## compile the virtual machine: 
     g++ -o vm vm.cpp
-## Run with the sample program: 
+## Run the  program: 
     ./vm
 
 ## Implementation 
