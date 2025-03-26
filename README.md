@@ -48,43 +48,43 @@ asm
 95 jnz 92 a
 96 halt
 
-##Running
+## Running
 compile the virtual machine:   g++ -o vm vm.cpp
 Run with the sample program:   ./vm
 
-##Implementation 
-Memory: 100-location memory initialized to 0
-Registers:
+## Implementation 
+  Memory: 100-location memory initialized to 0
+  Registers:
           General purpose: a, b, c, d, e, f
           Special: sp (stack pointer), acc (accumulator), pc (program counter)
           System: ivec (interrupt vector), int (interrupt flag), timer
-Scheduling:
+  Scheduling:
           Timer interrupt every 5 cycles
           Round-robin switching between 2 processes
           Process contexts saved on stack
 
-##Limitations
+## Limitations
            Fixed memory size (100 locations)
            Limited to 2 processes 
            No memory protection
            Simple round-robin scheduling
            Basic error handling
 
-##Future Enhancements
+## Future Enhancements
          Add more instructions (multiply, divide, etc.)
          Implement virtual memory
          Add system calls
          Support more processes
          Improve error reporting
 
-##Output Interpretation
-The program will output:
+## Output Interpretation
+   The program will output:
                        Countdown from 20 (Process 0)
                        Countdown from 10000 (Process 1)
                        Final register and memory states
                        The counts will be interleaved due to process switching
 
-##Debugging Tips
+## Debugging Tips
              Check register states after halt
              Examine memory contents for stack values
              Verify timer and interrupt settings
