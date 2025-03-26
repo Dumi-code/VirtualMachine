@@ -31,22 +31,22 @@ A simple virtual machine that executes custom assembly code with process schedul
 ## Sample Program (prog.asm)
 asm
 # Process 0 - counts down from 20
-80 movv a 20
-81 movv b 1
-82 sub a b
-83 mov a acc
-84 out acc
-85 jnz 82 a
-86 halt
+    80 movv a 20
+    81 movv b 1
+    82 sub a b
+    83 mov a acc
+    84 out acc
+    85 jnz 82 a
+    86 halt
 
 # Process 1 - counts down from 10000
-90 movv a 10000
-91 movv b 1
-92 sub a b
-93 mov a acc
-94 out acc
-95 jnz 92 a
-96 halt
+    90 movv a 10000
+    91 movv b 1
+    92 sub a b
+    93 mov a acc
+    94 out acc
+    95 jnz 92 a
+    96 halt
 
 ## Running
 ## compile the virtual machine: 
@@ -55,15 +55,15 @@ asm
     ./vm
 
 ## Implementation 
-  Memory: 100-location memory initialized to 0
-  Registers:
-          General purpose: a, b, c, d, e, f
-          Special: sp (stack pointer), acc (accumulator), pc (program counter)
-          System: ivec (interrupt vector), int (interrupt flag), timer
-  Scheduling:
-          Timer interrupt every 5 cycles
-          Round-robin switching between 2 processes
-          Process contexts saved on stack
+  **Memory: 100-location memory initialized to 0.
+  **Registers:
+          General purpose: a, b, c, d, e, f.
+          Special: sp (stack pointer), acc (accumulator), pc (program counter).
+          System: ivec (interrupt vector), int (interrupt flag), timer.
+  **Scheduling:
+          Timer interrupt every 5 cycles.
+          Round-robin switching between 2 processes.
+          Process contexts saved on stack.
 
 ## Limitations
    Fixed memory size (100 locations),
